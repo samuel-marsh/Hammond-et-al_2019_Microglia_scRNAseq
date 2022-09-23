@@ -54,10 +54,10 @@ wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://LINKHERE
 wget -O hammond_anndata.zip https://LINKHERE
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_ann_Converted_vXXX.h5ad https://LINKHERE
+wget -O Hammond_et-al-2019_anndata_Converted_vXXX.h5ad https://LINKHERE
 
 # Download Young vs. Old Samples Object
-wget -O Hammond_et-al-2019_Aged_SCE_Converted_vXXX.h5ad https://LINKHERE
+wget -O Hammond_et-al-2019_Aged_anndata_Converted_vXXX.h5ad https://LINKHERE
 ```
 
 ### Using Datasets  
