@@ -16,36 +16,36 @@ Datasets can be downloaded through browser using the following links:
 
 | Dataset | Figures | Type | Link |
 | :-----: | :-----: | :------: | :------------: |
-| All Samples | Figure 1 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [All Sample Seurat](https://TBD) |
+| All Samples | Figure 1 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [All Sample Seurat](https://figshare.com/ndownloader/files/37590094) |
 | All Samples | Figure 1 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [All Sample SCE](https://TBD) |
-| All Samples | Figure 1 | [anndata](https://anndata.readthedocs.io/en/latest/) | [All Sample SCE](https://TBD) |
-| Young vs. Old | Figure 5 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [Young vs. Old Seurat](https://TBD) |
-| Young vs. Old | Figure 5 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [Young vs. Old SCE](https://TBD) |
+| All Samples | Figure 1 | [anndata](https://anndata.readthedocs.io/en/latest/) | [All Sample SCE](https://figshare.com/ndownloader/files/37590442) |
+| Young vs. Old | Figure 5 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [Young vs. Old Seurat](https://figshare.com/ndownloader/files/37590091) |
+| Young vs. Old | Figure 5 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [Young vs. Old SCE](https://figshare.com/ndownloader/files/37590430) |
 | Young vs. Old | Figure 5 | [anndata](https://anndata.readthedocs.io/en/latest/) | [Young vs. Old anndata](https://TBD) |
 
 #### Download via command line
 **Seurat Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_seurat.zip https://LINKHERE
+wget -O hammond_seurat.zip https://figshare.com/ndownloader/articles/21201463/versions/2
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_Seurat_Converted_v4.qs https://LINKHERE
+wget -O Hammond_et-al-2019_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37590094
 
 # Download Young vs. Old Samples Object
-wget -O Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs https://LINKHERE
+wget -O Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37590091
 ```
 
 **SCE Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_SCE.zip https://LINKHERE
+wget -O hammond_SCE.zip https://figshare.com/ndownloader/articles/21201472/versions/1
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_SCE_Converted_v1-16-0.qs https://LINKHERE
+wget -O Hammond_et-al-2019_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37590442
 
 # Download Young vs. Old Samples Object
-wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://LINKHERE
+wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37590430
 ```
 
 **anndata Objects**
