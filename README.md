@@ -9,7 +9,18 @@ Timothy R. Hammond<sup>1,\* </sup>, Connor Dufort, Lasse Dissing-Olesen, Stefani
 <sup><sup>\*</sup>Analysis Contact (contact: timothy.hammond@sanofi.com)</sup>  
 <sup><sup>\*</sup>Repo/Object Contact (contact: samuel.marsh@childrens.harvard.edu)</sup>  
 
-##  Information
+##  About the Datasets  
+Analysis was perfomred in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  
+The objects contain:
+- Raw & Normalized expression data.
+- tSNE coordinates of analysis shown in paper.
+- Cell level meta data (age, sex, batch, etc)
+
+They do not contain:
+- Variable genes
+- ICA factor loadings
+- Scaled Data (removed to keep object size small, can be added using package functions)
+
 
 
 
