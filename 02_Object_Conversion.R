@@ -6,7 +6,7 @@
 # R 4.1.2
 library(Seurat) #v4.1.0
 library(SingleCellExperiment) #v1.16.0
-library(qs) #0.25.3
+library(qs) #v0.25.3
 
 hammond_main <- qread("~/Dropbox (BCH)/Hammond_2019_Immunity/Seurat_Objects/Hammond_et-al-2019_Seurat_Converted_v4.qs")
 
@@ -31,7 +31,7 @@ qsave(x = hammond_aged_sce, file = "Hammond_et-al-2019_Aged_SCE_Converted_v1-16-
 # R 4.1.2
 library(Seurat) #v4.1.0
 library(SeuratDisk) #v0.0.0.9020
-library(qs) #0.25.3
+library(qs) #v0.25.3
 
 hammond_main <- qread("~/Dropbox (BCH)/Hammond_2019_Immunity/Seurat_Objects/Hammond_et-al-2019_Seurat_Converted_v4.qs")
 
