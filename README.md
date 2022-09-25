@@ -17,7 +17,7 @@
 
 
 ##  About the Datasets  
-Analysis was perfomred in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  Objects are available in 3 most popular formats for use in both R and Python (Seurat, SingleCellExperiment, and anndata).  
+Analysis was performed in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  Objects are available in 3 most popular formats for use in both R and Python (Seurat, SingleCellExperiment, and anndata).  
 
 *The objects contain:*
 - Raw & Normalized expression data.
