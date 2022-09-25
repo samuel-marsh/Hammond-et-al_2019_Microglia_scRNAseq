@@ -73,7 +73,7 @@ wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://figshare.com/nd
 **anndata Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_anndata.zip https://figshare.com/ndownloader/articles/21201616/versions/1
+wget -O hammond_anndata.zip https://figshare.com/ndownloader/articles/21201616/versions/2
 
 # Download All Samples Object
 wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37590553
