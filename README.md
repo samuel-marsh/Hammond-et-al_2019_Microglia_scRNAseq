@@ -12,8 +12,8 @@
 ## Table of Contents  
 **[About the Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#about-the-datasets)**  
 **[Object Creation](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#object-creation)**  
-**[Downloading Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#downloading-datasets)**  
-**[Loading & Basic Use of Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#using-datasets)**  
+**[Downloading Objects](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#downloading-objects)**  
+**[Loading & Basic Use of Objects](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#using-objects)**  
 
 
 ##  About the Datasets  
@@ -37,7 +37,7 @@ The steps and functions used for object creation are detailed in script: [01_Obj
 Objects were then converted (see [02_Object_Conversion.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/02_Object_Conversion.R)) to SingleCellExperiment using `Seurat::as.SingleCellExperiment()` and anndata using `SeuratDisk::SaveH5Seurat` and `SeuratDisk::Convert` functions.
 
 
-## Downloading Datasets  
+## Downloading Objects  
 Dataset objects can be downloaded from figshare either using browser or command line as detailed below.  
 
 ### Download via browser  
@@ -89,5 +89,5 @@ wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/nd
 wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37590544
 ```
 
-## Using Datasets  
+## Using Objects  
 See scripts for basic usage information and some recreation of paper figures.
