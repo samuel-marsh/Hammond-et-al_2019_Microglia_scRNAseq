@@ -11,7 +11,7 @@ Timothy R. Hammond<sup>1,\* </sup>, Connor Dufort, Lasse Dissing-Olesen, Stefani
 
 ## Table of Contents  
 **[About the Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#about-the-datasets)**  
-**Object Creation](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#object-creation)**  
+**[Object Creation](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#object-creation)**  
 **[Downloading Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#downloading-datasets)**  
 **[Loading & Basic Use of Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#using-datasets)**  
 
