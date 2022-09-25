@@ -29,10 +29,11 @@ Analysis was perfomred in paper as described without use of bespoke object/file 
 - Scaled Data (removed to keep object size small, can be added using package functions)
 
 ### Object Creation  
-The steps and functions used for object creation are detailed in script: [01_Object_Creation.R](LINK_HERE).  In short objects were created in R using [scCustomize](https://samuel-marsh.github.io/scCustomize/) & [Seurat](https://github.com/satijalab/seurat).  Objects were then converted (see [02_Object_Conversion.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/02_Object_Conversion.R)) to SingleCellExperiment using `Seurat::as.SingleCellExperiment()` and anndata using `SeuratDisk::SaveH5Seurat` and `SeuratDisk::Convert` functions.
+The steps and functions used for object creation are detailed in script: [01_Object_Creation.R](LINK_HERE).  In short objects were created in R using [scCustomize](https://samuel-marsh.github.io/scCustomize/) & [Seurat](https://github.com/satijalab/seurat).  
+Objects were then converted (see [02_Object_Conversion.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/02_Object_Conversion.R)) to SingleCellExperiment using `Seurat::as.SingleCellExperiment()` and anndata using `SeuratDisk::SaveH5Seurat` and `SeuratDisk::Convert` functions.
 
 
-### Downloading Datasets  
+## Downloading Datasets  
 #### Download via browser  
 Datasets can be downloaded through browser using the following links:  
 
