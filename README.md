@@ -11,17 +11,18 @@ Timothy R. Hammond<sup>1,\* </sup>, Connor Dufort, Lasse Dissing-Olesen, Stefani
 
 ##  About the Datasets  
 Analysis was perfomred in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  
-The objects contain:
+*The objects contain:*
 - Raw & Normalized expression data.
 - tSNE coordinates of analysis shown in paper.
 - Cell level meta data (age, sex, batch, etc)
 
-They do not contain:
+*They do not contain:*
 - Variable genes
 - ICA factor loadings
 - Scaled Data (removed to keep object size small, can be added using package functions)
 
-
+### Object Creation  
+The steps and functions used for object creation are detailed in script: [Object_Creation.R](LINK_HERE).  In short objects were created in R using scCustomize & Seurat.  Objects were then converted (see [Object_Conversion.R](LINK_HERE)) to SingleCellExperiment and anndata formats using `Seurat::as.SingleCellExperiment()` and `SeuratDisk::SaveH5Seurat` & `SeuratDisk::Convert` functions.
 
 
 ### Downloading Datasets  
