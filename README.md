@@ -37,8 +37,8 @@ Objects were then converted (see [02_Object_Conversion.R](https://github.com/sam
 
 ## Downloading Datasets  
 Dataset objects can be downloaded from figshare either using browser or command line as detailed below.  
-  
-#### Download via browser  
+
+### Download via browser  
 Datasets can be downloaded through browser using the following links:  
 
 | Dataset | Figures | Type | Link |
@@ -50,7 +50,7 @@ Datasets can be downloaded through browser using the following links:
 | Young vs. Old | Figure 5 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [Young vs. Old SCE](https://figshare.com/ndownloader/files/37590430) |
 | Young vs. Old | Figure 5 | [anndata](https://anndata.readthedocs.io/en/latest/) | [Young vs. Old anndata](https://figshare.com/ndownloader/files/37590544) |
 
-#### Download via command line
+### Download via command line
 **Seurat Objects**
 ```
 # Download both objects in .zip
