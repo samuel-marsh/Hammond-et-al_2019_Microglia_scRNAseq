@@ -17,11 +17,11 @@ Datasets can be downloaded through browser using the following links:
 | Dataset | Figures | Type | Link |
 | :-----: | :-----: | :------: | :------------: |
 | All Samples | Figure 1 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [All Sample Seurat](https://figshare.com/ndownloader/files/37590094) |
-| All Samples | Figure 1 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [All Sample SCE](https://TBD) |
+| All Samples | Figure 1 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [All Sample SCE](https://figshare.com/ndownloader/files/37590553) |
 | All Samples | Figure 1 | [anndata](https://anndata.readthedocs.io/en/latest/) | [All Sample SCE](https://figshare.com/ndownloader/files/37590442) |
 | Young vs. Old | Figure 5 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [Young vs. Old Seurat](https://figshare.com/ndownloader/files/37590091) |
 | Young vs. Old | Figure 5 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [Young vs. Old SCE](https://figshare.com/ndownloader/files/37590430) |
-| Young vs. Old | Figure 5 | [anndata](https://anndata.readthedocs.io/en/latest/) | [Young vs. Old anndata](https://TBD) |
+| Young vs. Old | Figure 5 | [anndata](https://anndata.readthedocs.io/en/latest/) | [Young vs. Old anndata](https://figshare.com/ndownloader/files/37590544) |
 
 #### Download via command line
 **Seurat Objects**
@@ -51,13 +51,13 @@ wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://figshare.com/nd
 **anndata Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_anndata.zip https://LINKHERE
+wget -O hammond_anndata.zip https://figshare.com/ndownloader/articles/21201616/versions/1
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_anndata_Converted_vXXX.h5ad https://LINKHERE
+wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37590553
 
 # Download Young vs. Old Samples Object
-wget -O Hammond_et-al-2019_Aged_anndata_Converted_vXXX.h5ad https://LINKHERE
+wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37590544
 ```
 
 ### Using Datasets  
