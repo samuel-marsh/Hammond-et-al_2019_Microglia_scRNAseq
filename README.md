@@ -9,8 +9,15 @@ Timothy R. Hammond<sup>1,\* </sup>, Connor Dufort, Lasse Dissing-Olesen, Stefani
 <sup><sup>\*</sup>Analysis Contact (contact: timothy.hammond@sanofi.com)</sup>  
 <sup><sup>\*</sup>Repo/Object Contact (contact: samuel.marsh@childrens.harvard.edu)</sup>  
 
+### Table of Contents
+[About the Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#about-the-datasets)
+[Object Creation](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#object-creation)
+[Downloading Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#downloading-datasets)
+[Loading & Basic Use of Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#using-datasets)
+
+
 ##  About the Datasets  
-Analysis was perfomred in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  
+Analysis was perfomred in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  Objects are available in 3 most popular formats for use in both R and Python (Seurat, SingleCellExperiment, and anndata)
 *The objects contain:*
 - Raw & Normalized expression data.
 - tSNE coordinates of analysis shown in paper.
@@ -22,7 +29,7 @@ Analysis was perfomred in paper as described without use of bespoke object/file 
 - Scaled Data (removed to keep object size small, can be added using package functions)
 
 ### Object Creation  
-The steps and functions used for object creation are detailed in script: [Object_Creation.R](LINK_HERE).  In short objects were created in R using scCustomize & Seurat.  Objects were then converted (see [Object_Conversion.R](LINK_HERE)) to SingleCellExperiment and anndata formats using `Seurat::as.SingleCellExperiment()` and `SeuratDisk::SaveH5Seurat` & `SeuratDisk::Convert` functions.
+The steps and functions used for object creation are detailed in script: [Object_Creation.R](LINK_HERE).  In short objects were created in R using [scCustomize](https://samuel-marsh.github.io/scCustomize/) & [Seurat]https://github.com/satijalab/seurat.  Objects were then converted (see [Object_Conversion.R](LINK_HERE)) to SingleCellExperiment and anndata formats using `Seurat::as.SingleCellExperiment()` and `SeuratDisk::SaveH5Seurat` & `SeuratDisk::Convert` functions.
 
 
 ### Downloading Datasets  
@@ -75,5 +82,5 @@ wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/nd
 wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37590544
 ```
 
-### Using Datasets  
+## Using Datasets  
 See scripts for basic usage information and some recreation of paper figures.
