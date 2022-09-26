@@ -31,7 +31,12 @@ Analysis was performed in paper as described without use of bespoke object/file 
 - Scaled Data (removed to keep object size small, can be added using package functions)
 
 ### Object Creation  
-The steps and functions used for object creation are detailed in script: [01_Object_Creation.R](LINK_HERE).  In short objects were created in R using [scCustomize](https://samuel-marsh.github.io/scCustomize/) & [Seurat](https://github.com/satijalab/seurat).  
+The steps and functions used for object creation are detailed in script: [01_Object_Creation.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/01_Object_Creation.R).  
+
+#### Downloading data
+Raw data matrices can be downloaded using browser from NCBI GEO [GSE121654](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE121654&format=file).  If using command line you can use [ffq tool from Pacther lab](https://github.com/pachterlab/ffq).  
+
+Raw data matrices were then processed in R using [scCustomize](https://samuel-marsh.github.io/scCustomize/) & [Seurat](https://github.com/satijalab/seurat) to create Seurat objects.  
 
 
 Objects were then converted (see [02_Object_Conversion.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/02_Object_Conversion.R)) to SingleCellExperiment using `Seurat::as.SingleCellExperiment()` and anndata using `SeuratDisk::SaveH5Seurat` and `SeuratDisk::Convert` functions.
@@ -45,48 +50,48 @@ Datasets can be downloaded through browser using the following links:
 
 | Dataset | Figures | Type | Link |
 | :-----: | :-----: | :------: | :------------: |
-| All Samples | Figure 1 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [All Sample Seurat](https://figshare.com/ndownloader/files/37590094) |
-| All Samples | Figure 1 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [All Sample SCE](https://figshare.com/ndownloader/files/37590553) |
-| All Samples | Figure 1 | [anndata](https://anndata.readthedocs.io/en/latest/) | [All Sample SCE](https://figshare.com/ndownloader/files/37590442) |
-| Young vs. Old | Figure 5 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [Young vs. Old Seurat](https://figshare.com/ndownloader/files/37590091) |
-| Young vs. Old | Figure 5 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [Young vs. Old SCE](https://figshare.com/ndownloader/files/37590430) |
-| Young vs. Old | Figure 5 | [anndata](https://anndata.readthedocs.io/en/latest/) | [Young vs. Old anndata](https://figshare.com/ndownloader/files/37590544) |
+| All Samples | Figure 1 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [All Sample Seurat](https://figshare.com/ndownloader/files/37606220) |
+| All Samples | Figure 1 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [All Sample SCE](https://figshare.com/ndownloader/files/37606391) |
+| All Samples | Figure 1 | [anndata](https://anndata.readthedocs.io/en/latest/) | [All Sample anndata](https://figshare.com/ndownloader/files/37606421) |
+| Young vs. Old | Figure 5 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [Young vs. Old Seurat](https://figshare.com/ndownloader/files/37606217) |
+| Young vs. Old | Figure 5 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [Young vs. Old SCE](https://figshare.com/ndownloader/files/37606379) |
+| Young vs. Old | Figure 5 | [anndata](https://anndata.readthedocs.io/en/latest/) | [Young vs. Old anndata](https://figshare.com/ndownloader/files/37606418) |
 
 ### Download via command line
 **Seurat Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_seurat.zip https://figshare.com/ndownloader/articles/21201463/versions/2
+wget -O hammond_seurat.zip https://figshare.com/ndownloader/articles/21201463/versions/3
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37590094
+wget -O Hammond_et-al-2019_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37606220
 
 # Download Young vs. Old Samples Object
-wget -O Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37590091
+wget -O Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37606217
 ```
 
 **SCE Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_SCE.zip https://figshare.com/ndownloader/articles/21201472/versions/1
+wget -O hammond_SCE.zip https://figshare.com/ndownloader/articles/21201472/versions/2
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37590442
+wget -O Hammond_et-al-2019_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37606391
 
 # Download Young vs. Old Samples Object
-wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37590430
+wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37606379
 ```
 
 **anndata Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_anndata.zip https://figshare.com/ndownloader/articles/21201616/versions/2
+wget -O hammond_anndata.zip https://figshare.com/ndownloader/articles/21201616/versions/3
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37590553
+wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37606421
 
 # Download Young vs. Old Samples Object
-wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37590544
+wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37606418
 ```
 
 ## Using Objects  
