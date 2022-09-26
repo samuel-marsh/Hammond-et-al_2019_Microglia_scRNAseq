@@ -32,7 +32,6 @@ qsave(x = hammond_aged_sce, file = "data_objects/Hammond_et-al-2019_Aged_SCE_Con
 library(Seurat) #v4.1.0
 library(sceasy) #v0.0.7
 library(qs) #v0.25.3
-library(reticulate)
 
 hammond_main <- qread("data_objects/Hammond_et-al-2019_Seurat_Converted_v4.qs")
 
@@ -41,7 +40,7 @@ hammond_aged <- qread("data_objects/Hammond_et-al-2019_Aged_Seurat_Converted_v4.
 # Convert Objects -----------------------------------------------------------------------------
 # Main Object
 
-convertFormat(obj = hammond_main, from = "seurat", to = "anndata", outFile = "data_objects/Hammond_et-al-2019_anndata_Converted_v0-8-0.h5Seurat")
+convertFormat(obj = hammond_main, from = "seurat", to = "anndata", outFile = "data_objects/Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad")
 
 # Aged Object
-convertFormat(obj = hammond_main, from = "seurat", to = "anndata", outFile = "data_objects/Hammond_et-al-2019_anndata_Converted_v0-8-0.h5Seurat")
+convertFormat(obj = hammond_aged, from = "seurat", to = "anndata", outFile = "data_objects/Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad")
