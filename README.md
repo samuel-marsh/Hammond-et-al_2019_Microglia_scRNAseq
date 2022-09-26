@@ -36,6 +36,9 @@ The steps and functions used for object creation are detailed in script: [01_Obj
 #### Downloading data
 Raw data matrices can be downloaded using browser from NCBI GEO [GSE121654](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE121654&format=file).  If using command line you can use [ffq tool from Pacther lab](https://github.com/pachterlab/ffq).  
 
+
+  
+#### Creating Objects  
 Raw data matrices were then processed in R using [scCustomize](https://samuel-marsh.github.io/scCustomize/) & [Seurat](https://github.com/satijalab/seurat) to create Seurat objects.  
 
 
