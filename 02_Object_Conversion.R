@@ -30,19 +30,18 @@ qsave(x = hammond_aged_sce, file = "data_objects/Hammond_et-al-2019_Aged_SCE_Con
 # Load Packages & Data ------------------------------------------------------------------------
 # R 4.1.2
 library(Seurat) #v4.1.0
-library(SeuratDisk) #v0.0.0.9020
+library(sceasy) #v0.0.7
 library(qs) #v0.25.3
+library(reticulate)
 
 hammond_main <- qread("data_objects/Hammond_et-al-2019_Seurat_Converted_v4.qs")
 
 hammond_aged <- qread("data_objects/Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs")
 
-
 # Convert Objects -----------------------------------------------------------------------------
 # Main Object
-SaveH5Seurat(object = hammond_main, filename = "data_objects/Hammond_et-al-2019_anndata_Converted_v0-8-0.h5Seurat", verbose = T)
-Convert(source = "data_objects/Hammond_et-al-2019_anndata_Converted_v0-8-0.h5Seurat", dest = "h5ad", verbose = T)
+
+convertFormat(obj = hammond_main, from = "seurat", to = "anndata", outFile = "data_objects/Hammond_et-al-2019_anndata_Converted_v0-8-0.h5Seurat")
 
 # Aged Object
-SaveH5Seurat(object = hammond_aged, filename = "data_objects/Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5Seurat", verbose = T)
-Convert(source = "data_objects/Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5Seurat", dest = "h5ad", verbose = T)
+convertFormat(obj = hammond_main, from = "seurat", to = "anndata", outFile = "data_objects/Hammond_et-al-2019_anndata_Converted_v0-8-0.h5Seurat")
