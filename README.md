@@ -40,7 +40,7 @@ Raw data matrices can be downloaded using browser from NCBI GEO [GSE121654](http
 Raw data matrices were then processed in R using [scCustomize](https://samuel-marsh.github.io/scCustomize/) & [Seurat](https://github.com/satijalab/seurat) to create Seurat objects.  The steps and functions used for object creation are detailed in script: [01_Object_Creation.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/01_Object_Creation.R).  
 
 
-Objects were then converted (see [02_Object_Conversion.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/02_Object_Conversion.R)) to SingleCellExperiment using `Seurat::as.SingleCellExperiment()` and anndata using `SeuratDisk::SaveH5Seurat` and `SeuratDisk::Convert` functions.
+Objects were then converted (see [02_Object_Conversion.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/02_Object_Conversion.R)) to SingleCellExperiment using `Seurat::as.SingleCellExperiment()` and anndata using `sceasy::convertFormat` functions.
 
 
 ## Downloading Objects  
