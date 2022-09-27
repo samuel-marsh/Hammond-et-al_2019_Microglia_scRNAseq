@@ -123,6 +123,6 @@ We also provide a jupyter notebook with basic commands for loading and plotting 
 
 ### Color Palettes (Matching Paper Figures)
 We also provide color palettes in easily accessible formats for use in either R or python.  The script [05_Hammond_Color_Palettes.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/05_Hammond_Color_Palettes.R) provides details of basic use.  
-- Seurat objects contain color palettes in the `@misc` slot of the object.
+- Seurat objects contain color palettes in the `@misc` slot of the objects.
 - For either Seurat, SCE, or any other R-based use there is also a qs object [Hammond_et-al-2019_Color_Palettes.qs](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/Hammond_et-al-2019_Color_Palettes.qs) in this repo which contains all color palettes for easy loading.
 - For Python [05_Hammond_Color_Palettes.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/05_Hammond_Color_Palettes.R) contains vectors formatted for copy and paste use in python.
