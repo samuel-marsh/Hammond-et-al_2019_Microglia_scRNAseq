@@ -18,7 +18,7 @@
 
 ##  About the Datasets  
 Analysis was performed in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  
-*NOTE: If you would like to query individual genes and their expression across clusters/ages you can use interactive web portal [microgliasinglecell.com](microgliasinglecell.com).*  
+*NOTE: If you would like to query individual genes and their expression across clusters/ages you can use interactive web portal [microgliasinglecell.com](https://microgliasinglecell.com).*  
 
 Objects described in this repo are available in 3 most popular formats for use in both R and Python (Seurat, SingleCellExperiment, and anndata).  
 
