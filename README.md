@@ -100,6 +100,19 @@ wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.c
 ### Using Objects in R
 Examples of some basic use and plotting of Seurat and SCE objects can be found in script: [03_Object_Usage_R.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/03_Object_Usage_R.R).
 
-The
+Use of Seurat object also takes advantage of the ability to use scCustomize for plotting:
+```
+library(tidyverse)
+library(Seurat)
+library(scCustomize)
+library(patchwork)
 
-![image info](Seurat_Plotting.png)
+p1 <- DimPlot(hammond_all_samples, cols = hammond_all_samples@misc$hammond_colors, pt.size = 0.25, raster = F, label = T, label.size = 5) + NoLegend() + ggtitle("Hammond et. al., 2019 All Samples") + theme(plot.title = element_text(hjust = 0.5))
+
+p2 <- Cluster_Highlight_Plot(seurat_object = hammond_all_samples, cluster_name = 4, highlight_color = hammond_all_samples@misc$hammond_colors[[6]]) + ggtitle("Cluster 9") + theme(plot.title = element_text(hjust = 0.5))
+
+p3 <- FeaturePlot_scCustom(seurat_object = hammond_all_samples, features = "Spp1")
+
+p1 + p2 + p3
+```
+![](Seurat_Plotting.png)
