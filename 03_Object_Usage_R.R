@@ -5,13 +5,15 @@
 
 # Load Packages -------------------------------------------------------------------------------
 library(tidyverse)
-library(Seurat)
-library(scCustomize)
+library(Seurat) #v4.1.0
+library(scCustomize) #v0.7.0.9938
 library(qs)
 
 
 # Load Main Object ---------------------------------------------------------------------------------
 hammond_all_samples <- qread("data_objects/Hammond_et-al-2019_Seurat_Converted_v4.qs")
+
+hammond_young_vs_old <- qread("data_objects/Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs")
 
 # Plotting ------------------------------------------------------------------------------------
 
@@ -23,11 +25,22 @@ DimPlot(hammond_all_samples, cols = hammond_all_samples@misc$hammond_colors, pt.
 # cluster 9 is technically 13th cluster in the color string due to clusters 2a, 2b, 2c, 7a, 7b, 7c
 Cluster_Highlight_Plot(seurat_object = hammond_all_samples, cluster_name = 4, highlight_color = hammond_all_samples@misc$hammond_colors[[6]])
 
+# Plot Age Distribution on tSNE Coordinates (Figure 1C)
+DimPlot_All_Samples(seurat_object = hammond_all_samples, meta_data_column = "Age")
+
 # Plot gene expression with same color scheme as paper (e.g., Figure 1E-G)
 # Hammond approximate gene expression gradient colors are stored in OBJECT@misc$hammond_gene_colors
 hammond_markers <- c("Fcrls", "P2ry12", "Cx3cr1", "Trem2", "C1qa", "Arg1", "Rrm2", "Ube2c", "Cenpa", "Fabp5", "Spp1", "Hmox1", "Ms4a7", "Ccl4", "Ifi27l2a", "F13a1", "H2.Aa", "Ccr2", "Lyve1", "Mgl2")
 
 FeaturePlot(object = hammond_all_samples, features = hammond_markers, ncol = 5, raster = F, order = T, cols = hammond_all_samples@misc$hammond_gene_colors)
+
+
+# Plot Young vs. Old Clustering
+DimPlot(object = hammond_young_vs_old, cols = hammond_young_vs_old@misc$hammond_aged_colors)
+
+# Plot by Age
+DimPlot_All_Samples(seurat_object = hammond_young_vs_old, meta_data_column = "age")
+
 
 # Meta Data -----------------------------------------------------------------------------------
 
@@ -36,7 +49,6 @@ hammond_meta <- hammond_all_samples@meta.data %>%
   group_by(GEO_ID_Number) %>%
   slice(1) %>%
   select(-c(orig.ident, nFeature_RNA, nCount_RNA, tsne_1, tsne_2, ICA_Cluster, Paper_Cluster))
-
 
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
