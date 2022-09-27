@@ -7,3 +7,4 @@
 *.h5ad
 *.h5Seurat
 *[[:digit:]].qs
+*plotting.R
