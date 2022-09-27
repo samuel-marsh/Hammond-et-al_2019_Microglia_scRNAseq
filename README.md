@@ -17,7 +17,9 @@
 
 
 ##  About the Datasets  
-Analysis was performed in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  Objects are available in 3 most popular formats for use in both R and Python (Seurat, SingleCellExperiment, and anndata).  
+Analysis was performed in paper as described without use of bespoke object/file format.  However, to facilitate easier use of data in analyzed/annotated form we have created pseudo-objects.  *If you would like to query individual genes and their expression across clusters/ages you can use interactive web portal [microgliasinglecell.com](microgliasinglecell.com).*
+
+Objects described in this repo are available in 3 most popular formats for use in both R and Python (Seurat, SingleCellExperiment, and anndata).  
 
 *The objects contain:*
 - Raw & Normalized expression data.
@@ -33,7 +35,6 @@ Analysis was performed in paper as described without use of bespoke object/file 
 ### Object Creation  
 #### Downloading data
 Raw data matrices can be downloaded using browser from NCBI GEO [GSE121654](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE121654&format=file).  If using command line you can use [ffq tool from Pacther lab](https://github.com/pachterlab/ffq).  
-
 
 
 #### Creating Objects  
@@ -96,4 +97,9 @@ wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.c
 ```
 
 ## Using Objects  
-See scripts for basic usage information and some recreation of paper figures.
+### Using Objects in R
+Examples of some basic use and plotting of Seurat and SCE objects can be found in script: [03_Object_Usage_R.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/03_Object_Usage_R.R).
+
+The
+
+![image info](Seurat_Plotting.png)
