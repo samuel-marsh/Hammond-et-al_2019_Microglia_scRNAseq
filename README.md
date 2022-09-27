@@ -53,9 +53,9 @@ Datasets can be downloaded through browser using the following links:
 
 | Dataset | Figures | Type | Link |
 | :-----: | :-----: | :------: | :------------: |
-| All Samples | Figure 1 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [All Sample Seurat](https://figshare.com/ndownloader/files/37606220) |
-| All Samples | Figure 1 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [All Sample SCE](https://figshare.com/ndownloader/files/37606391) |
-| All Samples | Figure 1 | [anndata](https://anndata.readthedocs.io/en/latest/) | [All Sample anndata](https://figshare.com/ndownloader/files/37610792) |
+| All Samples | Figure 1 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [All Sample Seurat](https://figshare.com/ndownloader/files/37624052) |
+| All Samples | Figure 1 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [All Sample SCE](https://figshare.com/ndownloader/files/37624058) |
+| All Samples | Figure 1 | [anndata](https://anndata.readthedocs.io/en/latest/) | [All Sample anndata](https://figshare.com/ndownloader/files/37624073) |
 | Young vs. Old | Figure 5 | [Seurat](https://github.com/satijalab/seurat/wiki/Seurat) | [Young vs. Old Seurat](https://figshare.com/ndownloader/files/37606217) |
 | Young vs. Old | Figure 5 | [SCE](https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html) | [Young vs. Old SCE](https://figshare.com/ndownloader/files/37606379) |
 | Young vs. Old | Figure 5 | [anndata](https://anndata.readthedocs.io/en/latest/) | [Young vs. Old anndata](https://figshare.com/ndownloader/files/37610789) |
@@ -64,10 +64,10 @@ Datasets can be downloaded through browser using the following links:
 **Seurat Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_seurat.zip https://figshare.com/ndownloader/articles/21201463/versions/3
+wget -O hammond_seurat.zip https://figshare.com/ndownloader/articles/21201463/versions/4
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37606220
+wget -O Hammond_et-al-2019_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37624052
 
 # Download Young vs. Old Samples Object
 wget -O Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs https://figshare.com/ndownloader/files/37606217
@@ -76,10 +76,10 @@ wget -O Hammond_et-al-2019_Aged_Seurat_Converted_v4.qs https://figshare.com/ndow
 **SCE Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_SCE.zip https://figshare.com/ndownloader/articles/21201472/versions/2
+wget -O hammond_SCE.zip https://figshare.com/ndownloader/articles/21201472/versions/3
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37606391
+wget -O Hammond_et-al-2019_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37624058
 
 # Download Young vs. Old Samples Object
 wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://figshare.com/ndownloader/files/37606379
@@ -88,10 +88,10 @@ wget -O Hammond_et-al-2019_Aged_SCE_Converted_v1-16-0.qs https://figshare.com/nd
 **anndata Objects**
 ```
 # Download both objects in .zip
-wget -O hammond_anndata.zip https://figshare.com/ndownloader/articles/21201616/versions/4
+wget -O hammond_anndata.zip https://figshare.com/ndownloader/articles/21201616/versions/5
 
 # Download All Samples Object
-wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37610792
+wget -O Hammond_et-al-2019_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37624073
 
 # Download Young vs. Old Samples Object
 wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.com/ndownloader/files/37610789
@@ -104,8 +104,8 @@ Examples of some basic use and plotting of Seurat and SCE objects can be found i
 Use of Seurat object also takes advantage of the ability to use [scCustomize](https://samuel-marsh.github.io/scCustomize/) for plotting:
 ```
 library(tidyverse)
-library(Seurat)
-library(scCustomize)
+library(Seurat) # v4.1.0
+library(scCustomize) # v0.7.0.9038
 library(patchwork)
 
 p1 <- DimPlot(hammond_all_samples, cols = hammond_all_samples@misc$hammond_colors, pt.size = 0.25, raster = F, label = T, label.size = 5) + NoLegend() + ggtitle("Hammond et. al., 2019 All Samples") + theme(plot.title = element_text(hjust = 0.5))
