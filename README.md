@@ -7,7 +7,7 @@
 <sup><sup>1</sup>Performed analysis</sup>   
 <sup><sup>2</sup>Created Objects/Repo</sup>  
 <sup><sup>\*</sup>Analysis Contact (contact: timothy.hammond@sanofi.com)</sup>  
-<sup><sup>\*</sup>Repo/Object Contact (contact: samuel.marsh@childrens.harvard.edu)</sup>  
+<sup><sup>\#</sup>Repo/Object Contact (contact: samuel.marsh@childrens.harvard.edu)</sup>  
 
 ## Table of Contents  
 **[About the Datasets](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq#about-the-datasets)**  
