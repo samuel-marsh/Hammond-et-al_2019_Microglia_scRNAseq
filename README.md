@@ -100,7 +100,7 @@ wget -O Hammond_et-al-2019_Aged_anndata_Converted_v0-8-0.h5ad https://figshare.c
 ### Using Objects in R
 Examples of some basic use and plotting of Seurat and SCE objects can be found in script: [03_Object_Usage_R.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/03_Object_Usage_R.R).
 
-Use of Seurat object also takes advantage of the ability to use scCustomize for plotting:
+Use of Seurat object also takes advantage of the ability to use [scCustomize](https://samuel-marsh.github.io/scCustomize/) for plotting:
 ```
 library(tidyverse)
 library(Seurat)
@@ -116,3 +116,6 @@ p3 <- FeaturePlot_scCustom(seurat_object = hammond_all_samples, features = "Spp1
 p1 + p2 + p3
 ```
 ![](Seurat_Plotting.png)
+
+### Using Objects in Python  
+We also provide a jupyter notebook with basic commands for loading and plotting objects using scanpy/anndata: [04_Object_Usage_Scanpy.ipynb](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/04_Object_Usage_Scanpy.ipynb)
