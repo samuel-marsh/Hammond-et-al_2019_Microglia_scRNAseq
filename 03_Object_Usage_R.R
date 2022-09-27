@@ -17,12 +17,11 @@ hammond_all_samples <- qread("data_objects/Hammond_et-al-2019_Seurat_Converted_v
 
 # Plot with paper color scheme (e.g., Figure 1B)
 # Hammond approximate colors are stored in OBJECT@misc$hammond_colors
-DimPlot(hammond_all_samples, cols = hammond_all_samples@misc$hammond_colors, pt.size = 0.25, raster = F, label = T, label.size = 5) + NoLegend()
-
+DimPlot(hammond_all_samples, cols = hammond_all_samples@misc$hammond_colors, pt.size = 0.25, raster = F, label = T, label.size = 6) + NoLegend()
 
 # Plot clusters highlighted (e.g., Figure 2A)
 # cluster 9 is technically 13th cluster in the color string due to clusters 2a, 2b, 2c, 7a, 7b, 7c
-Cluster_Highlight_Plot(seurat_object = hammond_all_samples, cluster_name = 9, highlight_color = hammond_all_samples@misc$hammond_colors[[13]])
+Cluster_Highlight_Plot(seurat_object = hammond_all_samples, cluster_name = 4, highlight_color = hammond_all_samples@misc$hammond_colors[[6]])
 
 # Plot gene expression with same color scheme as paper (e.g., Figure 1E-G)
 # Hammond approximate gene expression gradient colors are stored in OBJECT@misc$hammond_gene_colors
