@@ -104,8 +104,8 @@ Examples of some basic use and plotting of Seurat and SCE objects can be found i
 Use of Seurat object also takes advantage of the ability to use [scCustomize](https://samuel-marsh.github.io/scCustomize/) for plotting:
 ```
 library(tidyverse)
-library(Seurat) # v4.1.0
-library(scCustomize) # v0.7.0.9038
+library(Seurat) #v4.1.0
+library(scCustomize) #v0.7.0.9038
 library(patchwork)
 
 p1 <- DimPlot(hammond_all_samples, cols = hammond_all_samples@misc$hammond_colors, pt.size = 0.25, raster = F, label = T, label.size = 5) + NoLegend() + ggtitle("Hammond et. al., 2019 All Samples") + theme(plot.title = element_text(hjust = 0.5))
@@ -120,3 +120,9 @@ p1 + p2 + p3
 
 ### Using Objects in Python  
 We also provide a jupyter notebook with basic commands for loading and plotting objects using scanpy/anndata: [04_Object_Usage_Scanpy.ipynb](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/04_Object_Usage_Scanpy.ipynb)
+
+### Color Palettes (Matching Paper Figures)
+We also provide color palettes in easily accessible formats for use in either R or python.  The script [05_Hammond_Color_Palettes.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/05_Hammond_Color_Palettes.R) details basic use.  
+- Seurat objects contain color palettes in the `@misc` slot of the object.
+- For either Seurat, SCE, or any other R-based use there is also a qs object [Hammond_et-al-2019_Color_Palettes.qs](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/Hammond_et-al-2019_Color_Palettes.qs) in this repo which contains all color palettes for easy loading.
+- For Python [05_Hammond_Color_Palettes.R](https://github.com/samuel-marsh/Hammond-et-al_2019_Microglia_scRNAseq/blob/main/05_Hammond_Color_Palettes.R) contains vectors formatted for copy and paste use in python.
